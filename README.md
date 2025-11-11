@@ -130,3 +130,5 @@ CertifConfEuro/
 └── ... (fichiers config)
 ```
 ---
+# Bilan & Conclusion
+Cette approche constitue une solution pertinente pour une startup souhaitant démarrer sans s’engager dans des abonnements ou des coûts supplémentaires. Elle présente néanmoins certaines limites. Il restera toutefois possible de migrer le projet vers d’autres plateformes ou modes d’hébergement lorsque la startup aura gagné en maturité. C’est dans cette optique que j’ai veillé à structurer mon code de manière maintenable et évolutive.
