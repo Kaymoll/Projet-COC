@@ -1,7 +1,7 @@
 # Projet-COC
 
 Il s'agit d'un projet [Next.js](https://nextjs.org) intialisé avec [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) que j'ai réalisé en toute autonomie pour un client qui souhaitait se lancer dans la vente de certificat de conformité européen (COC).
-Pour des des raisons de sécurité le code ne peut être partager en public, vous trouverez ici toutes autres informations relatives au site web. <br>
+Pour des raisons de sécurité le code ne peut être partager en public, vous trouverez ici toutes autres informations relatives au site web. <br>
 
 ## Prestataire & Sous-traitant
 | Prestataire | Rôle | Localisation |
