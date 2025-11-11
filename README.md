@@ -1,6 +1,6 @@
 # Projet-COC
 
-Il s'agit d'un projet [Next.js](https://nextjs.org) intialisé avec [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Il s'agit d'un projet [Next.js](https://nextjs.org) intialisé avec [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) que j'ai réalisé en toute autonomie pour un client qui souhaitait se lancer dans la vente de certificat de conformité européen (COC).
 Pour des des raisons de sécurité le code ne peut être partager en public, vous trouverez ici toutes autres informations relatives au site web. <br>
 
 ## Prestataire & Sous-traitant
@@ -14,7 +14,7 @@ Pour des des raisons de sécurité le code ne peut être partager en public, vou
 *Ces prestataires appliquent des normes de sécurité et de confidentialité conformes au RGPD (chiffrement, clauses contractuelles types, PCI-DSS, etc.)<br>
 Je tiens à préciser que je n'ai aucune action chez eux mais j'apprécie vraiment leurs services open-source/freemium. <br>
 
-### Supabase offre plusieurs avantages par rapport à d'autres solutions. Il utilise PostgreSQL de manière native, sans fork, ce qui garantit une compatibilité complète et un accès à des extensions avancées comme PostGIS, TimescaleDB ou PgVector, souvent disponibles en un seul clic.
+### Supabase offre plusieurs avantages par rapport à d'autres solutions. Il utilise PostgreSQL de manière native, sans fork, ce qui garantit une compatibilité complète et un accès à des extensions avancées (PostGIS, TimescaleDB ou PgVector).
 De plus, son système de sécurité au niveau des lignes (Row Level Security, RLS) permet de sécuriser les données directement depuis le client, en définissant des politiques d'accès spécifiques, comme "les utilisateurs ne peuvent voir que leurs propres données".
 Cela permet une interaction directe avec la base de données depuis le navigateur, protégée par ces règles, sans nécessiter de créer des endpoints API pour chaque opération.<br>
 
