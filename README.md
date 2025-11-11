@@ -14,11 +14,11 @@ Pour des raisons de sécurité le code ne peut être partager en public, vous tr
 *Ces prestataires appliquent des normes de sécurité et de confidentialité conformes au RGPD (chiffrement, clauses contractuelles types, PCI-DSS, etc.)<br>
 Je tiens à préciser que je n'ai aucune action chez eux mais j'apprécie vraiment leurs services open-source/freemium. <br>
 
-### Supabase offre plusieurs avantages par rapport à d'autres solutions. Il utilise PostgreSQL de manière native, sans fork, ce qui garantit une compatibilité complète et un accès à des extensions avancées (PostGIS, TimescaleDB ou PgVector).
+**Supabase offre plusieurs avantages par rapport à d'autres solutions. Il utilise PostgreSQL de manière native, sans fork, ce qui garantit une compatibilité complète et un accès à des extensions avancées** (PostGIS, TimescaleDB ou PgVector). <br><br>
 De plus, son système de sécurité au niveau des lignes (Row Level Security, RLS) permet de sécuriser les données directement depuis le client, en définissant des politiques d'accès spécifiques, comme "les utilisateurs ne peuvent voir que leurs propres données".
 Cela permet une interaction directe avec la base de données depuis le navigateur, protégée par ces règles, sans nécessiter de créer des endpoints API pour chaque opération.<br>
 
-### Vercel est idéal pour l'hébergement du frontend et des fonctions sans serveur, tandis que Supabase fournit une base de données SQL, une authentification sans serveur, un stockage et des fonctions Edge, ce qui permet de couvrir l'ensemble du backend de manière efficace.
+**Vercel est idéal pour l'hébergement du frontend et des fonctions sans serveur, tandis que Supabase fournit une base de données SQL, une authentification sans serveur, un stockage et des fonctions Edge, ce qui permet de couvrir l'ensemble du backend de manière efficace.** <br><br>
 L'intégration entre Vercel et Supabase est fluide : elle permet de synchroniser automatiquement les variables d'environnement entre les deux services, de créer des projets Supabase comme ressources Vercel, de gérer les factures via Vercel et de configurer automatiquement les URLs de redirection pour les branches de prévisualisation. <br>
 
 ---
@@ -35,7 +35,7 @@ L'intégration entre Vercel et Supabase est fluide : elle permet de synchroniser
 - Les fichiers sensibles ne sont jamais importés côté client.
 - Webhook Stripe tourne en Node runtime.
 ### Auth correctement implémentée : 
-- Auth vérifiée server-side dans (dashboard)/layout.tsx.
+- Auth vérifiée server-side dans dashboard/layout.tsx.
 - Middleware redirige par défaut (défense en profondeur).
 - Les API revalident toujours la session (ne pas faire confiance au middleware seul).
 ### API routes sécurisées :
@@ -54,7 +54,7 @@ L'intégration entre Vercel et Supabase est fluide : elle permet de synchroniser
 
 ```text
 CertifConfEuro/
-├── .next/                              # Next.js 15 (TS/Tailwind)
+├── .next/                              # Next.js 15 (TypeScript/Tailwind)
 ├── app/
 │   ├── api/                            # API Routes Next.js (Backend)
 │   │   ├── auth/
@@ -127,8 +127,8 @@ CertifConfEuro/
 ├── public/
 │   └── ...                             # Images
 ├── .env.local                          # Variables d'environnement (ignoré)
-└── ... (fichiers config)
+└── ... (fichiers config)               # Modules, config Next, etc.
 ```
 ---
 # Bilan & Conclusion
-Cette approche constitue une solution pertinente pour une startup souhaitant démarrer sans s’engager dans des abonnements ou des coûts supplémentaires. Elle présente néanmoins certaines limites. Il restera toutefois possible de migrer le projet vers d’autres plateformes ou modes d’hébergement lorsque la startup aura gagné en maturité. C’est dans cette optique que j’ai veillé à structurer mon code de manière maintenable et évolutive.
+Bien sûr il existe des approches toutes aussi performantes et fiables mais celle-ci constitue une solution pertinente pour une startup souhaitant démarrer sans s’engager dans des abonnements ou des coûts supplémentaires. Elle présente néanmoins certaines limites. Il restera toutefois possible de migrer le projet vers d’autres plateformes ou modes d’hébergement lorsque la startup aura gagné en maturité. C’est dans cette optique que j’ai veillé à structurer mon code de manière maintenable et évolutive.
